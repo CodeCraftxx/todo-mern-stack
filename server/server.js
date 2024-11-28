@@ -3,6 +3,8 @@ const app = express();
 const mongoose = require("mongoose");
 const cors = require("cors");
 const projectRoutes = require("./routes/project.route.js");
+
+const port = process.env.PORT || 3000; 
 const corsOptions = {
   origin: "http://localhost:5173",
   credentials: true,
@@ -24,8 +26,8 @@ mongoose
   )
   .then(() => {
     console.log("Conectado a la base de datos");
-    app.listen(3001, () => {
-      console.log("Servidor corriendo en el puerto 3001");
+    app.listen(port, () => {
+      console.log("Servidor corriendo...");
     });
   })
   .catch(()=>{
