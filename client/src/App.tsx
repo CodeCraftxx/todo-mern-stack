@@ -13,10 +13,11 @@ type TaskP = {
   complete: boolean;
 };
 function App() {
+  const url = "https://todo-backend-62oy.onrender.com/api/projects/"
   const [tasks, setTasks] = useState<TasksProps[]>([]);
   useEffect(() => {
     axios
-      .get("http://localhost:3001/api/projects")
+      .get(url)
       .then((res) => {
         setTasks(res.data);
       })
@@ -28,7 +29,7 @@ function App() {
   };
   const editTask = (id: number, updatedTask: TaskP) => {
     axios
-      .put("http://localhost:3001/api/projects/" + id, updatedTask)
+      .put(url + id, updatedTask)
       .then(() => {
         setTasks((prevTask) =>
           prevTask.map((t) => (t._id === id ? { ...t, ...updatedTask } : t))
@@ -38,7 +39,7 @@ function App() {
   };
   const deleteTask = (id: number) => {
     axios
-      .delete("http://localhost:3001/api/projects/" + id)
+      .delete(url + id)
       .then(() => {
         setTasks((prevTask) => prevTask.filter((t) => t._id !== id));
       })
