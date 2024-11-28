@@ -11,10 +11,12 @@ type SearchProps = {
 }
 function Search({onAddTask}: SearchProps) {
   const [task, setTask] = useState("");
+  const url = "https://todo-backend-62oy.onrender.com/api/projects/"
+
   // Algo
   const handleSend = () =>{
     if(task === "") return;
-    axios.post('http://localhost:3001/api/projects',{
+    axios.post(url,{
       task: task,
       complete: false
     })
