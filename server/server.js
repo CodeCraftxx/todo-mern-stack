@@ -5,12 +5,12 @@ const cors = require("cors");
 const projectRoutes = require("./routes/project.route.js");
 
 const port = process.env.PORT || 3000; 
-const corsOptions = {
-  origin: "https://todo-frontend-ks86.onrender.com",
-  credentials: true,
-};
+// const corsOptions = {
+//   origin: "https://todo-frontend-ks86.onrender.com",
+// };
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 
 // Importar rutas
