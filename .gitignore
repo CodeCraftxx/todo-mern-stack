@@ -1,0 +1,18 @@
+# Dependencias
+node_modules/
+
+# Archivos de lock
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+
+# Directorios generados
+dist/
+build/
+
+# Configuración local
+.env
+.DS_Store
+.idea/
+.vscode/
+*.log
