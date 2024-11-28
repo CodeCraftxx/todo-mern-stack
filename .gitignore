@@ -7,7 +7,6 @@ yarn.lock
 package-lock.json
 
 # Directorios generados
-dist/
 build/
 
 # Configuración local
