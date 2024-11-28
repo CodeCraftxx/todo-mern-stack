@@ -3,7 +3,7 @@
 ¡Bienvenido a la aplicación de To-Do List! Este proyecto es una aplicación web que permite a los usuarios gestionar sus tareas pendientes. Utiliza el stack MERN (MongoDB, Express, React y Node.js) y está diseñado con Tailwind CSS para una interfaz moderna y responsiva.
 
 ---
-# **Dónde se puede utilizar**
+## **Dónde se puede utilizar**
 *Click en ->* **https://todo-frontend-ks86.onrender.com** *para ver deploy*.
 
 ## **Características**
