@@ -6,7 +6,7 @@ const projectRoutes = require("./routes/project.route.js");
 
 const port = process.env.PORT || 3000; 
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: "https://todo-frontend-ks86.onrender.com/",
   credentials: true,
 };
 
